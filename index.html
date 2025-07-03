@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Currency Converter</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="converter-container">
+    <h1>💱 Currency Converter</h1>
+
+    <div class="input-section">
+      <input type="number" id="amount" placeholder="Enter amount" />
+
+      <label for="fromCurrency">From Currency</label>
+      <select id="fromCurrency" class="currency-select"></select>
+
+      <label for="toCurrency">To Currency</label>
+      <select id="toCurrency" class="currency-select"></select>
+
+      <button onclick="convertCurrency()">Convert</button>
+    </div>
+
+    <div class="result-section">
+      <h2 id="result">Converted amount will appear here 💸</h2>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
